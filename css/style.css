@@ -185,11 +185,12 @@ a:hover {
     width: 90%;
 }
 
+
 .card {
     height: 300px;
     width: 400px;
     margin: 3rem 0 0;
-    background-image: url('/img/inteligencia-artificial-algoritmo-tecnologia-codigo-de-programacao-1554210815064_v2_900x506.jpg');
+    background-image: url('/img/tecnolias.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -267,4 +268,31 @@ a:hover {
     justify-content: center;
     align-items: center;
     background-color: #2E1C2B;
+}
+
+@media (max-widht: 800px) {
+    .Social-media {
+        display: flex;
+        flex-direction: column;
+    }
+    .container {
+        margin-top: 0;
+    }
+    .card-container {
+        flex-direction: column;
+    }
+    .container .card-container:nth-child(1),
+    .container .card-container:nth-child(3) {
+        flex-direction: column-reverse;
+    }
+    .card-text {
+        width: 90%;
+        margin-top: 2rem;
+        text-align: center;
+    }
+
+    .card:hover > .card-wrapper::before {
+        width: 100px;
+        height: 100px;
+    }
 }
